@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/ahorcado.js" defer></script> <!-- Asegúrate de que el script se cargue después de jQuery -->
+</head>
+<body>
+    <div class="areadmin" id="panel" hidden>
+        <button class="botonJugar" id="botonAdmin">Panel de Administrador</button>
+        <button id="desconectar" class="botonJugar">Desconectarse</button>
+    </div>
+
+    <div class="areauser" id="paneluser" hidden>
+       <button class="botonJugar" id="historial">Ver Historial</button>
+       <button class="botonJugar" id="cambiarclave">Cambiar Clave</button>
+        <button  id="desconectar2" class="botonJugar">Desconectarse</button>
+        
+    </div>
+    
+    <div id="panelCambioContraseña" class="ahorcado" hidden>
+        <form id="formCambioContraseña" method="POST">
+            <h1>Cambio de clave</h1>
+            <input type="text" id="usuarioActual" name="usuarioActual" hidden>
+    
+            <label for="nuevaClave">Nueva Contraseña:</label>
+            <input type="password" id="nuevaClave" name="nuevaClave" required>
+    
+            <label for="confirmarClave">Confirmar Contraseña:</label>
+            <input type="password" id="confirmarClave" name="confirmarClave" required>
+    
+            <button type="submit" class="botonJugar" id="confirmacion">Cambiar Contraseña</button>
+           
+            <div id="erroresCambio" style="display:none; color:red;"></div>
+        </form>
+        <button id="volver" class="botonJugar">Volver</button>
+    </div>
+
+    <div class="ahorcado" id="menu">
+        <h1>Bienvenido <label id='user'></label></h1>
+        <h2>Elija su categoría para jugar</h2>
+        <select id="categoriaSelect">
+        
+        </select>
+        
+        <br><br>
+        <button class="botonJugar" id="empezar">JUGAR</button>
+    </div>
+
+    <div class='ahorcado2' id='juego' hidden>
+        <h1>Juego del Ahorcado</h1>
+        
+        <label id="mascara" class="mascara"></label>
+        <label id="vidas" class="vidas">6</label>
+
+       
+
+        
+        <img id="juegoahorcado" class="juegoahorcado" src="imagenes/6.png" alt="Imagen Ahorcado">
+
+        <img class="imagencorazon" src="https://png.pngtree.com/png-clipart/20230112/original/pngtree-gradient-heart-pixels-png-image_8905890.png" alt="Corazón" />
+        
+        <div id="botonesAbecedario"></div>
+    </div>
+
+    <div id='estadisticas'class="estadisticas" hidden>
+     <label id="puntuacionuser"></label>
+    </div>
+
+
+
+    <div class="gameover" id='gameover' hidden>
+            
+        <label>GAME OVER</label><br>
+        <label>LA PALABRA SECRETA ERA: <label id="solucion" style="color: red;"></label></label> <br>
+      <label id="puntos"></label><BR>
+        <label id="puntostotal2"></label><br>
+        <img src="imagenes/0.png" class="imgfinal"/>
+        <button id="reiniciar" class="botonJugar">Reintentar</button>
+        <button id="desconectar" class="botonJugar">Desconectarse</button>
+    </div>
+
+    <div class="gameover" id='win' hidden>
+            
+        <label>HAS GANADO</label><br>
+        <label>LA PALABRA SECRETA ERA: <label id="solucion2" style="color: red;"></label></label> <br>
+      <label id="puntos2"></label><BR>
+        <label id="puntostotal"></label><br>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/885/243/small_2x/golden-star-badge-you-win-game-award-icon-for-2d-png.png" class="imgfinal"/><br>
+        <button id="reiniciar" class="botonJugar">Jugar de Nuevo</button>
+        <button id="desconectar" class="botonJugar">Desconectarse</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/paneladmin.js"></script>
+
+</head>
+
+<body>
+    <button id="desconectar" class="botonJugar">Desconectarse</button>
+
+
+    <div class="menuadmin" id="menuadmin" hidden>
+        <h1>Panel de administrador</h1>
+        <button id="actualizarus" class="botonJugar">VISTA USUARIOS</button><br><br>
+        <button id="verhistorial" class="botonJugar">HISTORIAL DE JUGADORES</button><br><br>
+        <button id="insertarpalabra" class="botonJugar">INSERTAR NUEVA PALABRA</button><br><br>
+        <button id="actualizarcat" class="botonJugar">ACTUALIZAR CATEGORÍAS</button><br><br>
+
+        <button id="volverJuego" class="botonJugar">VOLVER AL JUEGO</button>
+    </div>
+
+
+    <div id="insertar" class="ahorcado" hidden>
+        <h1>Insertar palabra</h1>
+        <form id="insertpalabra">
+            <label for="palabra">Indique palabra nueva:</label>
+            <input type="text" id="palabra" name="palabra" required><br><br>
+
+            <label for="categoria">Indique categoría nueva:</label>
+            <input type="text" id="categoria" name="categoria" required><br><br>
+            <label id="errorinsert" style="color: red;" hidden></label>
+            <button type="submit" class="botonJugar">Insertar palabra</button>
+        </form>
+
+        <button id="volveradmin" class="botonJugar">Volver</button>
+    </div>
+
+    <div id="historial" class="tabla" hidden>
+        <h1>Vista de Historial</h1>
+        <div class="tabla-container">
+            <table border="1" id="tablaHistorial" class="tablaUsuarios">
+                <tr>
+                    <td>Fecha</td>
+                    <td>Puntuación</td>
+                    <td>Usuario</td>
+                </tr>
+
+            </table>
+        </div><br>
+        <button id="volverusuario" class="botonJugar">Volver</button>
+
+    </div>
+
+    <div id="historialadmin" class="tabla" hidden>
+        <h1>Vista Historial de todos los jugadores</h1>
+        <div class="tabla-container">
+            <table border="1" id="tablaHistorialadmin" class="tablaUsuarios">
+                <tr>
+                    <td>Fecha</td>
+                    <td>Puntuación</td>
+                    <td>Usuario</td>
+                </tr>
+
+            </table>
+        </div><br>
+        <button id="volveradmin" class="botonJugar">Volver</button>
+
+    </div>
+
+
+    <div id="tabla" class="tabla" hidden>
+        <h1>Vista de Usuarios</h1>
+        <div class="tabla-container">
+            <table border="1" id="tablaUsuarios" class="tablaUsuarios">
+            </table>
+        </div><BR>
+        <button id="volveradmin" class="botonJugar">Volver</button><BR><BR>
+    </div>
+
+
+    <div id="formularioModificacion" class="menuadmin" hidden>
+        <h1>Modificar Usuario</h1>
+        <form id="formEditUsuario">
+            <label for="usuarioEdit">Usuario:</label>
+            <input type="text" id="usuarioEdit" name="usuarioEdit" required><br><br>
+
+            <label for="claveEdit">Clave:</label>
+            <input type="password" id="claveEdit" name="claveEdit" required><br><br>
+
+            <label for="puntuacionEdit">Puntuación:</label>
+            <input type="number" id="puntuacionEdit" name="puntuacionEdit" required><br><br>
+
+            <button type="submit" id="guardar" class="botonJugar">Guardar Cambios</button>
+            <button type="button" id="cancelarEdicion" class="botonJugar">Cancelar</button>
+        </form>
+    </div>
+
+    <div id="formularioModificacionPalabra" class="ahorcado" hidden>
+        <h1>Modificar Categoría</h1>
+        <form id="formEditPalabras">
+            <input type="text" id="palabraEdit" name="palabraEdit" placeholder="Nueva palabra" hidden />
+            <input type="text" id="categoriaEdit" name="categoriaEdit" placeholder="Nueva categoría" />
+            <input type="hidden" id="palabraAntigua" value="palabra_original" />
+            <button type="submit" class="botonJugar">Modificar</button>
+            <button id="cancelar" class="botonJugar">Cancelar</button>
+        </form>
+
+    </div>
+
+    <div id="tablapalabras" class="tabla" hidden>
+        <h1>Modificar Categorías</h1>
+        <div class="tabla-container">
+            <table border="1" id="tablaPalabras" class="tablaUsuarios">
+
+            </table>
+
+        </div><br>
+        <button id="volveradmin" class="botonJugar">Volver</button><br><br>
+    </div>
+
+</body>
+
+</html>

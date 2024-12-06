@@ -1,0 +1,345 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("https://wallpapers.com/images/hd/4k-ultra-hd-windows-moon-at-night-fgr6svfcbxskfamz.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ahorcado {
+    background-color: #a569bd;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: absolute;
+    background-image: url("https://img.freepik.com/premium-photo/500px-photo-id-146492863-end-we-were-all-just-humans-drunk-idea-that-love-only-love-could-heal-our-brokenness-took-this-8-shot-vertical-panora-out-near-dragoon-az-summer_665346-28720.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 30%;
+    left: 35%;
+    padding: 20px;
+}
+
+.menuadmin {
+    background-color: #a569bd;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: absolute;
+    background-image: url("https://img.freepik.com/premium-photo/500px-photo-id-146492863-end-we-were-all-just-humans-drunk-idea-that-love-only-love-could-heal-our-brokenness-took-this-8-shot-vertical-panora-out-near-dragoon-az-summer_665346-28720.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 20%;
+    left: 35%;
+    padding: 20px;
+}
+
+.ahorcadoInicio {
+    background-color: #a569bd;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: absolute;
+    background-image: url("https://img.freepik.com/premium-photo/500px-photo-id-146492863-end-we-were-all-just-humans-drunk-idea-that-love-only-love-could-heal-our-brokenness-took-this-8-shot-vertical-panora-out-near-dragoon-az-summer_665346-28720.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 20%;
+    left: 35%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h1,
+h2 {
+    color: #581845;
+    text-shadow: 2px 2px 3px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white;
+    font-weight: bold;
+}
+
+.imgfinal {
+    width: 200px;
+}
+
+.botonJugar {
+    max-width: 360px;
+    height: 40px;
+    background-color: #5dade2;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid purple;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.botonJugar:hover {
+    background-color: #4a90e2;
+    border-color: #3b5998;
+}
+
+.ahorcado2 {
+    background-color: #a569bd;
+    width: 1300px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 150px;
+    background-image: url("https://512pixels.net/downloads/macos-wallpapers/10-6.png");
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.ahorcado2 h1,
+h2 {
+    color: black;
+    text-shadow: 1px 0px 0px rgb(47, 42, 128), 0px 1px 0px rgb(54, 31, 90), -1px 0px 0px rgb(40, 28, 97), 0px -1px 0px rgb(74, 48, 145);
+}
+
+.imagencorazon {
+    height: 100px;
+    margin-top: 280px;
+    margin-left: 400px;
+    position: absolute;
+}
+
+.vidas {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 500px;
+    font-size: 80px;
+}
+
+.mascara {
+    color: green;
+    position: absolute;
+    font-size: 100px;
+    left: 400px;
+    top: 150px;
+}
+
+.estadisticas {
+    background-color: #a569bd;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url("https://img.freepik.com/premium-photo/500px-photo-id-146492863-end-we-were-all-just-humans-drunk-idea-that-love-only-love-could-heal-our-brokenness-took-this-8-shot-vertical-panora-out-near-dragoon-az-summer_665346-28720.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+.estadisticas label {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 0px 0px white, 0px 1px 0px white, -1px 0px 0px white, 0px -1px 0px white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.gameover {
+    background-color: #a569bd;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    position: absolute;
+    background-image: url("https://img.freepik.com/premium-photo/500px-photo-id-146492863-end-we-were-all-just-humans-drunk-idea-that-love-only-love-could-heal-our-brokenness-took-this-8-shot-vertical-panora-out-near-dragoon-az-summer_665346-28720.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: blue;
+    text-shadow: 1px 0px 0px white, 0px 1px 0px white, -1px 0px 0px white, 0px -1px 0px white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesAbecedario {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 10px;
+    margin-top: 250px;
+    margin-left: 70px;
+    justify-items: center;
+    position: absolute;
+}
+
+.botonLetra {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5dade2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botonLetra:hover {
+    background-color: #3498db;
+}
+
+.juegoahorcado {
+    position: absolute;
+    height: 250px;
+    left: 100px;
+}
+
+.tabla-container {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.tabla {
+    background-color: #a569bd;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: purple;
+    border-style: solid;
+    background-image: url("https://i.imgur.com/fMhvcdZ.png");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 2%;
+    margin-left: 160px;
+    margin-top: 80px;
+    background-size: cover;
+}
+
+.tabla h1 {
+    color: blue;
+    text-shadow: 1px 0px 0px white, 0px 1px 0px white, -1px 0px 0px white, 0px -1px 0px white;
+}
+
+.tablaUsuarios {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 20%;
+}
+
+.tablaUsuarios th {
+    padding: 12px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tablaUsuarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tablaUsuarios td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+}
+
+.tablaUsuarios button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.tablaUsuarios button:hover {
+    background-color: #45a049;
+}
+
+.tablaUsuarios td,
+.tablaUsuarios th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tablaUsuarios tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabla-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tabla-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.tabla-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.botonLetra.correcto {
+    background-color: green !important;
+    color: white !important;
+}
+
+.botonLetra.incorrecto {
+    background-color: red !important;
+    color: white !important;
+}
